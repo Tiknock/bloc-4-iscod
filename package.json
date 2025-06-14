@@ -10,6 +10,11 @@
     "serve": "nodemon www/app.js",
     "test": "jest"
   },
+  "jest": {
+    "testEnvironment": "node",
+    "setupFilesAfterEnv": ["<rootDir>/jest.setup.js"],
+    "testTimeout": 30000
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
